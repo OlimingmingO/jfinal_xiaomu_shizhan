@@ -20,10 +20,13 @@ li
 {
 	list-style: none;
 }
+
+	
+/***************************************header区域**********************************************/
 .vmheader
 {
 	height: 140px;
-	margin-bottom: -140px;
+	/*margin-bottom: -140px;*/
 	position: relative;
 	background: url(imgs/header_bg.jpg) center center;
 	
@@ -90,6 +93,11 @@ li
 	display: inline-block;
 	padding: 10px;
 }
+.top_right_user .vm_vline{
+	margin: 0 5px;
+	color: #FFF;
+	font-size: 16px;
+}
 .top_right_user a
 {
 	color: #FFF;
@@ -128,8 +136,8 @@ li
 .vmmain-containner
 {
 	background: url(imgs/bodybg.png);
-	height: 100%;
-	padding: 140px 0px 140px 0px;
+	/*height: 100%;*/
+	/*padding: 140px 0px 140px 0px;*/
 }
 .main_row
 {
@@ -141,6 +149,77 @@ li
 {
 	padding: 10px 5px 10px 0px;
 	background: yellow;
+}
+.vm_article
+{
+	margin-top: 10px;
+}
+.vm_article .vm_article{
+	padding: 10px 0;
+	border-bottom: 1px dashed #999;
+}
+.vm_article .imagebox
+{
+	height: 160px;
+	padding-right: 8px;
+	position: relative;
+}
+.vm_article .imagebox .vm_article_category{
+	position: absolute;
+	color: white;
+	background: rgba(0,0,0,0.6);
+	top: 10px;
+	left: 12px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+.vm_article .imagebox a
+{
+	display: block;
+	height: 100%;
+}
+.vm_article .imagebox a img
+{
+	width: 100%;
+	height: 100%;
+}
+.vm_article .infobox{
+	padding-left: 8px;
+}
+.vm_article h1{
+	margin-top: 0;
+	
+}
+.vm_article h1 a{
+	font-size: 18px;
+	color: #004276;
+	display: block;
+	text-decoration: none;
+}
+.vm_article h1 a:hover{
+	color: red;
+}
+.vm_article .vm_article_remark{
+	font-size:14px;
+	color:#999;
+	height: 90px;
+	line-height: 1.5;
+	overflow: hidden;
+}
+.vm_article .vm_article_author{
+	padding-right: 10px;
+	font-size: 14px;
+	color:#999;
+	white-space: nowrap;
+}
+.vm_article .vm_article_labels{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.vm_article .vm_vline{
+	margin: 0px 5px;
+	font-size:14px;
+	color:#999;
 }
 .main_right
 {
@@ -155,7 +234,7 @@ li
 {
 	background: url(imgs/footer_bg.jpg);
 	height: 140px;
-	margin-top: -140px;
+	/*margin-top: -140px;*/
 }
 .vmfooter_links
 {
@@ -187,4 +266,17 @@ li
 	line-height: 20px;
 	text-align: center;
 	color: white;
+}
+
+/***************************************响应式布局**************************************************/
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+	#vm_main_carousel img{
+	width: 100%;
+	height: 200px;
+	}
+	.vmheader{
+		height: auto;
+		margin-bottom: 0px;
+		background: #2d3237;
+	}
 }
